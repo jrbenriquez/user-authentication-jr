@@ -16,7 +16,7 @@ Add this to your settings:
   - to use the User model
   
   ```
-    AUTH_USER_MODEL = 'authentication.USER'
+    AUTH_USER_MODEL = 'authentication.User'
   ```
   
   - add authentication class
