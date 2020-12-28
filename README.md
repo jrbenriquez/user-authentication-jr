@@ -21,8 +21,7 @@ Add this to your settings:
   
   - add authentication class
    ```
-   from authentication.utils.token import ExpiringTokenAuthentication
    
-   DEFAULT_AUTHENTICATION_CLASSES = [...., 'ExpiringTokenAuthentication']
+   DEFAULT_AUTHENTICATION_CLASSES = [...., 'authentication.utils.token.ExpiringTokenAuthentication']
    REST_FRAMEWORK_TOKEN_SECONDS_EXPIRY = 3600
    ```
