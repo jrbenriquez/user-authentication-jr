@@ -32,3 +32,13 @@ Add this to your settings:
    ```
     path('auth/', include('authentication.urls')),
    ```
+
+   - make sure admin app gets rollbacked to zero first
+   ```
+    python manage.py migrate admin zero
+   ```
+
+   - do migrations
+   ```
+    python manage.py migrate
+   ```
