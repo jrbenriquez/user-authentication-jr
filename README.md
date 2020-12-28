@@ -25,3 +25,7 @@ Add this to your settings:
    DEFAULT_AUTHENTICATION_CLASSES = [...., 'authentication.utils.token.ExpiringTokenAuthentication']
    REST_FRAMEWORK_TOKEN_SECONDS_EXPIRY = 3600
    ```
+   - add url entry for module to your urls.py
+   ```
+    path('auth/', include('authentication.urls')),
+   ```
