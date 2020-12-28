@@ -3,12 +3,17 @@ import setuptools
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
+requirements = []
+with open('requirements.txt', 'r') as fh:
+    for line in fh:
+        requirements.append(line.strip())
+
 setuptools.setup(
     name="user-authentication-jr",
-    version="0.0.3",
+    version="0.0.4",
     author="John Rei Enriquez",
     author_email="johnrei.enriquez@gmail.com",
-    description="A token based User model package with support for Cookies and API token authentication",
+    description="A django app with token based authentication for both Session and API Token",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/jrbenriquez/user-authentication-jr",
@@ -18,6 +23,6 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    install_required=['django-cors-header', 'djangorestframework'],
+    install_requires=requirements,
     python_requires='>=3.6',
 )
