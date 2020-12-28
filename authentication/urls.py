@@ -1,8 +1,8 @@
 from django.urls import path
 
-from .views import AuthorizeUser, signout
+from .views import AuthUser, signout
 
 urlpatterns = [
-    path('', AuthorizeUser.as_view(), name='authorize'),
+    path('', AuthUser.as_view(), name='authorize'),
     path('signout/', signout, name='signout')
 ]

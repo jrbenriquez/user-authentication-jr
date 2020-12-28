@@ -38,13 +38,12 @@ class AuthSerializer(serializers.Serializer):
     redirect = serializers.CharField()
 
 
-class AuthorizeUser(CreateAPIView):
+class AuthUser(CreateAPIView):
     serializer_class = AuthSerializer
     authentication_classes = [] # Improve later to limit only to one domain
     permission_classes = []
 
     def create(self, request, *args, **kwargs):
-        response = {}
         # Get the data from POST
         data = request.data
         username = data.get('username')
