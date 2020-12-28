@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="user-authentication-jr",
-    version="0.0.1",
+    version="0.0.3",
     author="John Rei Enriquez",
     author_email="johnrei.enriquez@gmail.com",
     description="A token based User model package with support for Cookies and API token authentication",
@@ -18,5 +18,6 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
+    install_required=['django-cors-header', 'djangorestframework'],
     python_requires='>=3.6',
 )
