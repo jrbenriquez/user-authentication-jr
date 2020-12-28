@@ -5,9 +5,12 @@ Check out PYPI: https://pypi.org/project/user-authentication-jr/
 
 Add this to your settings:
  
-  - add to `INSTALLED_APPS`
+  - add to `INSTALLED_APPS` after admin, auth and contenttypes
   ```
      INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
      ...,
      'authentication',
      ]

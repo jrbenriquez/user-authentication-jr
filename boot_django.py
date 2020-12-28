@@ -21,8 +21,9 @@ def boot_django():
         },
         INSTALLED_APPS=(
             "authentication",
-            'django.contrib.contenttypes',
+            'django.contrib.admin',
             'django.contrib.auth',
+            'django.contrib.contenttypes',
         ),
         TIME_ZONE="UTC",
         USE_TZ=True,
