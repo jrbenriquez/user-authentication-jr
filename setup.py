@@ -11,7 +11,7 @@ setuptools.setup(
     description="A token based User model package with support for Cookies and API token authentication",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/jrbenriquez/user-authentication-jr",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
