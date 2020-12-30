@@ -1,10 +1,17 @@
 # User Authentication with Token and/or Cookie Support
 
-This is an initial readme.
-Check out PYPI: https://pypi.org/project/user-authentication-jr/
+'authentication.models.User' has the following basic fields
+
+`username, email, first_name, last_name, is_staff, is_active, date_joined, last_login`
+
 
 Add this to your settings:
  
+   - make sure admin app gets rollbacked to zero first
+   ```
+    python manage.py migrate admin zero
+   ```
+
   - add to `INSTALLED_APPS` after admin, auth and contenttypes
   ```
      INSTALLED_APPS = [
@@ -31,11 +38,6 @@ Add this to your settings:
    - add url entry for module to your urls.py
    ```
     path('auth/', include('authentication.urls')),
-   ```
-
-   - make sure admin app gets rollbacked to zero first
-   ```
-    python manage.py migrate admin zero
    ```
 
    - do migrations

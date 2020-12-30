@@ -10,7 +10,7 @@ with open('requirements.txt', 'r') as fh:
 
 setuptools.setup(
     name="user-authentication-jr",
-    version="0.0.8",
+    version="0.0.10",
     author="John Rei Enriquez",
     author_email="johnrei.enriquez@gmail.com",
     description="A django app with token based authentication for both Session and API Token",
